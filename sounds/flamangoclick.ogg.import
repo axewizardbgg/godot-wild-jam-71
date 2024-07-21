@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/flamangoclick.ogg-80775bfaaf72d9697854d5e6c6b25dc6.oggstr"
+
+[deps]
+
+source_file="res://sounds/flamangoclick.ogg"
+dest_files=[ "res://.import/flamangoclick.ogg-80775bfaaf72d9697854d5e6c6b25dc6.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

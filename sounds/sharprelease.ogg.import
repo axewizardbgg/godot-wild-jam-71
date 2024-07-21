@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/sharprelease.ogg-4636407095ae694fdd57750ae78ae0f1.oggstr"
+
+[deps]
+
+source_file="res://sounds/sharprelease.ogg"
+dest_files=[ "res://.import/sharprelease.ogg-4636407095ae694fdd57750ae78ae0f1.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

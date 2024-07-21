@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/pryingloose.ogg-eb107db9ed5a12e3d1d3c6b148b4a177.oggstr"
+
+[deps]
+
+source_file="res://sounds/pryingloose.ogg"
+dest_files=[ "res://.import/pryingloose.ogg-eb107db9ed5a12e3d1d3c6b148b4a177.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

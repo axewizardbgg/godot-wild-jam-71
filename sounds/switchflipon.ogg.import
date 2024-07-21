@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/switchflipon.ogg-f45b4bb8c849b0a9fd63d81591dc7d7e.oggstr"
+
+[deps]
+
+source_file="res://sounds/switchflipon.ogg"
+dest_files=[ "res://.import/switchflipon.ogg-f45b4bb8c849b0a9fd63d81591dc7d7e.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

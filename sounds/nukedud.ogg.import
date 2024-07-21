@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/nukedud.ogg-d7313a03798603008f04ba0bf63be4ec.oggstr"
+
+[deps]
+
+source_file="res://sounds/nukedud.ogg"
+dest_files=[ "res://.import/nukedud.ogg-d7313a03798603008f04ba0bf63be4ec.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/jigglefiddle.ogg-cb58216099841db661a5f276e1387ad2.oggstr"
+
+[deps]
+
+source_file="res://sounds/jigglefiddle.ogg"
+dest_files=[ "res://.import/jigglefiddle.ogg-cb58216099841db661a5f276e1387ad2.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

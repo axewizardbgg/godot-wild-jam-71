@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/crankdown.ogg-076069912a9ab86ae0389920fb145605.oggstr"
+
+[deps]
+
+source_file="res://sounds/crankdown.ogg"
+dest_files=[ "res://.import/crankdown.ogg-076069912a9ab86ae0389920fb145605.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

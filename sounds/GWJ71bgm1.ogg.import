@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/GWJ71bgm1.ogg-c65f7b24d5b394b25abbea8c0fc99cde.oggstr"
+
+[deps]
+
+source_file="res://sounds/GWJ71bgm1.ogg"
+dest_files=[ "res://.import/GWJ71bgm1.ogg-c65f7b24d5b394b25abbea8c0fc99cde.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/slimeclick.ogg-3cc2fcc615c5eb93a5b0183d617538b2.oggstr"
+
+[deps]
+
+source_file="res://sounds/slimeclick.ogg"
+dest_files=[ "res://.import/slimeclick.ogg-3cc2fcc615c5eb93a5b0183d617538b2.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

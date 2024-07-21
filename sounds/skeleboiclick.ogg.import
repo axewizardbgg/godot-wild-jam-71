@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/skeleboiclick.ogg-233904535511bbef83efe11557ed72fe.oggstr"
+
+[deps]
+
+source_file="res://sounds/skeleboiclick.ogg"
+dest_files=[ "res://.import/skeleboiclick.ogg-233904535511bbef83efe11557ed72fe.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

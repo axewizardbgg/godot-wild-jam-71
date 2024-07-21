@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/creaking1.ogg-39a5a4e3e6b1db99e0ace85572d6ce92.oggstr"
+
+[deps]
+
+source_file="res://sounds/creaking1.ogg"
+dest_files=[ "res://.import/creaking1.ogg-39a5a4e3e6b1db99e0ace85572d6ce92.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

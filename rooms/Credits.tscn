@@ -1,0 +1,73 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://rooms/Credits.gd" type="Script" id=1]
+[ext_resource path="res://themes/smallText.tres" type="Theme" id=2]
+
+[node name="Credits" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -83.5
+margin_right = 83.5
+margin_bottom = 31.0
+theme = ExtResource( 2 )
+text = "Credits:
+
+-----------------------------------------------------------------
+
+A Game by \"AxeWizard\", \"JokeMaster\", and \"Frug\".
+
+-----------------------------------------------------------------
+
+Character Art: JokeMaster
+
+Item Art: JokeMaster
+
+Environmental Art: Frug, AxeWizard
+
+Sound Effects: JokeMaster, Frug, AxeWizard
+
+Story: JokeMaster, Frug, AxeWizard
+
+Effects: AxeWizard
+
+Development/Code: AxeWizard
+
+-----------------------------------------------------------------
+
+Tools Used:
+OS: Linux Mint v21.3
+Engine: Godot v3.5.3
+Art: Pixelorama v0.11.4
+Audio: Audacity v2.4.2
+Font: Tiny5
+
+Things that were used for sound effects:
+Various Nerf Guns
+Bottles/Cans
+A bag of coins
+A Slinky
+A Suitcase
+Our voices and hands
+A crumpled Paper Bag
+An Insulated Water Battle
+A Kitchen Knife
+
+-----------------------------------------------------------------
+
+Special thanks to my boys
+for working with me to
+make such a fun game.
+
+-----------------------------------------------------------------
+
+AxeWizard
+youtube.com/@axewizard
+
+You can find the source code here:
+github.com/axewizardbgg/godot-wild-jam-71
+
+"
+align = 1

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/b-b-boom.ogg-971cd72257e2087f9a8fc25dbca62c51.oggstr"
+
+[deps]
+
+source_file="res://sounds/b-b-boom.ogg"
+dest_files=[ "res://.import/b-b-boom.ogg-971cd72257e2087f9a8fc25dbca62c51.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

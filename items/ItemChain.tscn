@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://classes/Item.gd" type="Script" id=1]
+
+[node name="Item" type="Node2D"]
+script = ExtResource( 1 )
+sprPath = "res://sprites/GWJ71ChainCoiled.png"
+itemName = "Chain"
+desc = "A pile of fallen Chain... could be useful!"

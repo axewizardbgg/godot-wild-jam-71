@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://themes/smallText.tres" type="Theme" id=1]
+[ext_resource path="res://ui/DescLabel.gd" type="Script" id=2]
+
+[node name="DescLabel" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+size_flags_horizontal = 3
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="VBC" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="VBC"]
+margin_right = 320.0
+margin_bottom = 9.0
+size_flags_horizontal = 3
+align = 1

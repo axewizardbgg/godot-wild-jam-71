@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://themes/smallText.tres" type="Theme" id=1]
+[ext_resource path="res://ui/ChatLog.gd" type="Script" id=2]
+
+[node name="ChatLog" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="MC" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+custom_constants/margin_right = 2
+custom_constants/margin_top = 2
+custom_constants/margin_left = 2
+custom_constants/margin_bottom = 2
+
+[node name="VBC" type="VBoxContainer" parent="MC"]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 318.0
+margin_bottom = 178.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 2

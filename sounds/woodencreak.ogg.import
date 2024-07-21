@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/woodencreak.ogg-81f3ab8c986a7d09ce657cdfe4ce9132.oggstr"
+
+[deps]
+
+source_file="res://sounds/woodencreak.ogg"
+dest_files=[ "res://.import/woodencreak.ogg-81f3ab8c986a7d09ce657cdfe4ce9132.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
