@@ -66,6 +66,11 @@ func _on_Area2D_input_event(_viewport, event: InputEvent, _shape_idx) -> void:
 				# We have a match, make sure we're open
 				GameState.current.rooms[GameState.current.currentRoom].items.remove(i)
 				break
+		# We didn't trigger an event did we?
+		if sprPath == "res://sprites/GWJ71pileofgold.png":
+			# WE GOT ROBBED!
+			Events.robbed(get_tree())
+			return
 		# Did we get an item that affects our cursor? Update cursors just to be safe
 		get_tree().root.get_node("Main").updateCursors()
 		# We need to remove ourselves from the room state so we're not re-added

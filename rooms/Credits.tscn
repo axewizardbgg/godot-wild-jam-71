@@ -1,19 +1,34 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://rooms/Credits.gd" type="Script" id=1]
 [ext_resource path="res://themes/smallText.tres" type="Theme" id=2]
+[ext_resource path="res://sprites/GWJ71_320x180_TitleScreenFinal.png" type="Texture" id=3]
 
 [node name="Credits" type="Node2D"]
 script = ExtResource( 1 )
 
-[node name="Label" type="Label" parent="."]
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 0.137255, 0.137255, 0.137255, 1 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Move" type="Node2D" parent="."]
+
+[node name="Label" type="Label" parent="Move"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -83.5
-margin_right = 83.5
-margin_bottom = 31.0
+margin_left = 31.0
+margin_top = 82.0
+margin_right = 291.0
+margin_bottom = 847.0
 theme = ExtResource( 2 )
 text = "Credits:
+
+
+
+
+
+
 
 -----------------------------------------------------------------
 
@@ -31,7 +46,9 @@ Sound Effects: JokeMaster, Frug, AxeWizard
 
 Story: JokeMaster, Frug, AxeWizard
 
-Effects: AxeWizard
+Visual \"Effects\": AxeWizard
+
+Music: AxeWizard
 
 Development/Code: AxeWizard
 
@@ -41,8 +58,10 @@ Tools Used:
 OS: Linux Mint v21.3
 Engine: Godot v3.5.3
 Art: Pixelorama v0.11.4
-Audio: Audacity v2.4.2
+DAW (Sound Effects): Audacity v2.4.2
 Font: Tiny5
+DAW (Music): Reaper v7.14
+Guitar: Solar v2.7C
 
 Things that were used for sound effects:
 Various Nerf Guns
@@ -65,9 +84,18 @@ make such a fun game.
 
 AxeWizard
 youtube.com/@axewizard
+(There wil be a DevLog video in a few days)
 
 You can find the source code here:
-github.com/axewizardbgg/godot-wild-jam-71
-
-"
+https://github.com/axewizardbgg/godot-wild-jam-71  "
 align = 1
+
+[node name="Button" type="Button" parent="."]
+margin_left = 293.0
+margin_top = 160.0
+margin_right = 320.0
+margin_bottom = 180.0
+theme = ExtResource( 2 )
+text = "Skip"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

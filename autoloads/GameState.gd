@@ -133,7 +133,10 @@ var initial: Dictionary = {
 				},
 			],
 			"items": [
-
+				{
+					"scenePath": "res://items/ItemBroom.tscn",
+					"globalPos": Vector2(80,138),
+				}
 			],
 			"interactables": [
 				{
@@ -208,6 +211,10 @@ var initial: Dictionary = {
 				{
 					"scenePath": "res://interactables/BarrelWater.tscn",
 					"globalPos": Vector2(180,134),
+				},
+				{
+					"scenePath": "res://interactables/Rat.tscn",
+					"globalPos": Vector2(100,170),
 				}
 			],
 		},
@@ -293,11 +300,11 @@ var initial: Dictionary = {
 			"interactables": [
 				{
 					"scenePath": "res://interactables/SlimeBoi.tscn",
-					"globalPos": Vector2(50, 145),
+					"globalPos": Vector2(65, 125),
 				},
 				{
 					"scenePath": "res://interactables/Anvil.tscn",
-					"globalPos": Vector2(45, 165),
+					"globalPos": Vector2(60, 145),
 				},
 				{
 					"scenePath": "res://interactables/Gears.tscn",

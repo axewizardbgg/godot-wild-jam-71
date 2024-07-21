@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://themes/smallText.tres" type="Theme" id=1]
+[ext_resource path="res://ui/TitleScreen.gd" type="Script" id=2]
+[ext_resource path="res://sprites/GWJ71_320x180_TitleScreenFinal.png" type="Texture" id=3]
+[ext_resource path="res://sounds/titlesound.ogg" type="AudioStream" id=4]
+
+[node name="TitleScreen" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 3 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 193.0
+margin_top = 69.0
+margin_right = 246.0
+margin_bottom = 89.0
+theme = ExtResource( 1 )
+text = "Start Game!"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

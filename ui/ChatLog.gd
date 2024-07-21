@@ -4,11 +4,11 @@ extends Control
 # We need to manage a reference to where we add stuff to
 onready var chat: VBoxContainer = $MC/VBC
 var colorEvent: Color = Color.yellow
-var colorDialogue: Color = Color.limegreen
+var colorDialogue: Color = Color.lime
 var colorFail: Color = Color.red
 
 # I only want a few entries at a time
-var maxEntries: int = 3
+var maxEntries: int = 2
 var entries: Array = []
 
 # Add a new entry into the chatlog

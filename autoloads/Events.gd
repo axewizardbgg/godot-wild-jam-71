@@ -197,7 +197,7 @@ func _reset(main: Node2D) -> void:
 	main.updateCursors()
 
 func _victory(main: Node2D) -> void:
-	main.clearScene()
+	main.credits()
 
 func updateHoverLabel(text: String, clear: bool, sceneTree: SceneTree) -> void:
 	# Get the main node from the scene tree
@@ -362,6 +362,164 @@ func victory(sceneTree: SceneTree) -> void:
 	# Connect the signal
 	tween.connect("tween_all_completed", self, "_victory", [main])
 	# ensure our stuff can't be paused
+	spr.pause_mode = Node.PAUSE_MODE_PROCESS
+	spr2.pause_mode = Node.PAUSE_MODE_PROCESS
+	tween.pause_mode = Node.PAUSE_MODE_PROCESS
+	# Clear the descrption
+	clearDesc(sceneTree)
+	# Pause everything else so we can't do stuff in it
+	sceneTree.paused = true
+
+func robbed(sceneTree: SceneTree) -> void:
+	# In this event we get robbed by PossumBoots
+	var room: Node2D = sceneTree.root.get_node("Main/Room")
+	var main: Node2D = sceneTree.root.get_node("Main")
+	# Hide the light from the cursor
+	main.cursor.hideLight()
+	# Play a message that something went wrong
+	addEntryToChatLog("You got robbed by the famous PossumBoots!", "fail")
+	var spr: Sprite = Sprite.new()
+	spr.texture = load("res://sprites/GWJ71PossumBoots.png")
+	# PossumBoots is actually kinda big lol
+	spr.scale = Vector2(3,3)
+	# Add a light to PossumBoots as well
+	var light: Light2D = Light2D.new()
+	light.texture = load("res://sprites/GWJ71_lightmask.png")
+	light.energy = 1
+	light.texture_scale = 5
+	spr.add_child(light)
+	# Add to scene
+	room.add_child(spr)
+	# Set position
+	spr.global_position = Vector2(160,130)
+	# Play his sound
+	AudioManager.playSound("res://sounds/possumbootsclick.ogg")
+	# Create the sprite for our WASTED screen
+	var spr2: Sprite = Sprite.new()
+	spr2.texture = load("res://sprites/GWJ71_wasted.png")
+	# Start it out as transparent
+	spr2.modulate.a = 0
+	# Add it to the scene
+	room.add_child(spr2)
+	spr2.global_position = Vector2(160,90)
+	# Set up a Tween to make our endgame effect
+	var tween: Tween = Tween.new()
+	# Let's interpolate the size of Shrank
+	tween.interpolate_property(
+		spr, 
+		"scale", 
+		Vector2(3,3), 
+		Vector2(8,8),
+		3, 
+		Tween.TRANS_BOUNCE, 
+		Tween.EASE_OUT
+	)
+	# We need to interpolate his position too to make it go to the center of the screen.
+	tween.interpolate_property(
+		spr,
+		"global_position",
+		spr.global_position,
+		Vector2(160, 90),
+		3,
+		Tween.TRANS_LINEAR,
+		Tween.EASE_OUT
+	)
+	# Let's interpolate the alpha of the end screen
+	tween.interpolate_property(
+		spr2, 
+		"modulate", 
+		Color(1,1,1,0), 
+		Color(1,1,1,1), 
+		5, 
+		Tween.TRANS_LINEAR, 
+		Tween.EASE_IN
+	)
+	# Add it to the room
+	room.add_child(tween)
+	# Start the tween
+	tween.start()
+	# Connect the signal
+	tween.connect("tween_all_completed", self, "_reset", [main])
+	# Ensure our stuff can't be paused
+	spr.pause_mode = Node.PAUSE_MODE_PROCESS
+	spr2.pause_mode = Node.PAUSE_MODE_PROCESS
+	tween.pause_mode = Node.PAUSE_MODE_PROCESS
+	# Clear the descrption
+	clearDesc(sceneTree)
+	# Pause everything else so we can't do stuff in it
+	sceneTree.paused = true
+
+func squeaked(sceneTree: SceneTree) -> void:
+	# In this event you die from dissin' Terry
+	var room: Node2D = sceneTree.root.get_node("Main/Room")
+	var main: Node2D = sceneTree.root.get_node("Main")
+	# Hide the light from the cursor
+	main.cursor.hideLight()
+	# Play a message that something went wrong
+	addEntryToChatLog("You died of dissin' Terry! lol noob", "fail")
+	var spr: Sprite = Sprite.new()
+	spr.texture = load("res://sprites/GWJ71Rat.png")
+	# PossumBoots is actually kinda big lol
+	spr.scale = Vector2(3,3)
+	# Add a light to PossumBoots as well
+	var light: Light2D = Light2D.new()
+	light.texture = load("res://sprites/GWJ71_lightmask.png")
+	light.energy = 1
+	light.texture_scale = 5
+	spr.add_child(light)
+	# Add to scene
+	room.add_child(spr)
+	# Set position
+	spr.global_position = Vector2(160,130)
+	# Play his sound
+	AudioManager.playSound("res://sounds/ratattack.ogg")
+	# Create the sprite for our WASTED screen
+	var spr2: Sprite = Sprite.new()
+	spr2.texture = load("res://sprites/GWJ71_wasted.png")
+	# Start it out as transparent
+	spr2.modulate.a = 0
+	# Add it to the scene
+	room.add_child(spr2)
+	spr2.global_position = Vector2(160,90)
+	# Set up a Tween to make our endgame effect
+	var tween: Tween = Tween.new()
+	# Let's interpolate the size of Shrank
+	tween.interpolate_property(
+		spr, 
+		"scale", 
+		Vector2(3,3), 
+		Vector2(20,20),
+		3, 
+		Tween.TRANS_BOUNCE, 
+		Tween.EASE_OUT
+	)
+	# We need to interpolate his position too to make it go to the center of the screen.
+	tween.interpolate_property(
+		spr,
+		"global_position",
+		spr.global_position,
+		Vector2(160, 90),
+		3,
+		Tween.TRANS_LINEAR,
+		Tween.EASE_OUT
+	)
+	# Let's interpolate the alpha of the end screen
+	tween.interpolate_property(
+		spr2, 
+		"modulate", 
+		Color(1,1,1,0), 
+		Color(1,1,1,1), 
+		5, 
+		Tween.TRANS_LINEAR, 
+		Tween.EASE_IN
+	)
+	# Add it to the room
+	room.add_child(tween)
+	# Start the tween
+	tween.start()
+	# Connect the signal
+	tween.connect("tween_all_completed", self, "_reset", [main])
+	# Ensure our stuff can't be paused
 	spr.pause_mode = Node.PAUSE_MODE_PROCESS
 	spr2.pause_mode = Node.PAUSE_MODE_PROCESS
 	tween.pause_mode = Node.PAUSE_MODE_PROCESS

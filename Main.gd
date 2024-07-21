@@ -31,7 +31,6 @@ func _ready() -> void:
 	
 
 func clearScene() -> void:
-	# TODO: This might need to be made less brittle later
 	# Delete only the Room
 	var rm: Node2D = get_node_or_null("Room")
 	if is_instance_valid(rm):
@@ -172,4 +171,13 @@ func updateCursors():
 	cursorUI.updateSprite()
 	
 func credits() -> void:
-	pass # TODO
+	# Clear the scene first
+	# Iterate through every child
+	for c in get_children():
+		# Destroy instance
+		if is_instance_valid(c):
+			c.queue_free()
+	# Create the credits
+	var c: Node2D = load("res://rooms/Credits.tscn").instance()
+	# Add it to the scene
+	add_child(c)
